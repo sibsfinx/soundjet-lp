@@ -1,5 +1,5 @@
 const config = {
-  urls: ['http://octobear.webflow.io/'],
+  urls: ['http://audiomarket-client.webflow.io/'],
   directory: 'webflow/',
   webflowBadgeClass: '.w-webflow-badge'
 }
