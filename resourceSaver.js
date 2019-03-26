@@ -9,11 +9,8 @@ class MyResourceSaver extends ResourceSaver {
 
   saveResource(resource) {
     const filename = path.join(this.absoluteDirectoryPath, resource.getFilename());
-    //const text = resource.getText();
-    //console.log(res.getText());
     let text = resource.getText();
     let $ = cheerio.load(text);
-    //$(config.webflowBadgeClass).remove();
     let out = $('body').append(script);
     console.log(out.html());
     resource.setText(out.html());
